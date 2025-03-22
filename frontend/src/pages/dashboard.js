@@ -116,18 +116,29 @@ const Dashboard = () => {
           <h2>Finance Playground</h2>
           <p>Explore investment opportunities and strategies.</p>
         </motion.div>
-        <div style={styles.card}>
+        <motion.div
+          style={styles.card}
+          whileHover={{ scale: 1.05, boxShadow: "5px 5px 20px rgba(0, 255, 153, 0.5)" }}
+        >
           <h2>Expense Tracker</h2>
           <p>Track and categorize your spending.</p>
-        </div>
-        <div style={styles.card}>
+        </motion.div>
+        <motion.div
+          style={styles.card}
+          whileHover={{ scale: 1.05, boxShadow: "5px 5px 20px rgba(0, 255, 153, 0.5)" }}
+          onClick={() => navigate("/investment-guide")}
+        >
           <h2>Investment Guide</h2>
           <p>Learn about smart investing.</p>
-        </div>
-        <div style={styles.card}>
+        </motion.div>
+        <motion.div
+          style={styles.card}
+          whileHover={{ scale: 1.05, boxShadow: "5px 5px 20px rgba(0, 255, 153, 0.5)" }}
+          onClick={() => navigate("/finance-educator")}
+        >
           <h2>Financial Education</h2>
           <p>Boost your knowledge with curated courses.</p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Charts Section */}
