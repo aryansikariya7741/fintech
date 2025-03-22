@@ -1,0 +1,362 @@
+[
+    {
+        "name": "TATA MOTORS",
+        "sector": "Automobile",
+        "price": 1974.34,
+        "fluctuation": 0.041
+    },
+    {
+        "name": "MARUTI SUZUKI",
+        "sector": "Automobile",
+        "price": 4448.25,
+        "fluctuation": 0.047
+    },
+    {
+        "name": "HERO MOTOCORP",
+        "sector": "Automobile",
+        "price": 5241.14,
+        "fluctuation": 0.041
+    },
+    {
+        "name": "MAHINDRA",
+        "sector": "Automobile",
+        "price": 2294.98,
+        "fluctuation": 0.045
+    },
+    {
+        "name": "ASHOK LEYLAND",
+        "sector": "Automobile",
+        "price": 2622.43,
+        "fluctuation": 0.023
+    },
+    {
+        "name": "INFOSYS",
+        "sector": "Technology",
+        "price": 4159.17,
+        "fluctuation": 0.027
+    },
+    {
+        "name": "WIPRO",
+        "sector": "Technology",
+        "price": 4849.58,
+        "fluctuation": 0.015
+    },
+    {
+        "name": "TCS",
+        "sector": "Technology",
+        "price": 4766.6,
+        "fluctuation": 0.026
+    },
+    {
+        "name": "HCL TECH",
+        "sector": "Technology",
+        "price": 5189.56,
+        "fluctuation": 0.019
+    },
+    {
+        "name": "TECH MAHINDRA",
+        "sector": "Technology",
+        "price": 3056.07,
+        "fluctuation": 0.019
+    },
+    {
+        "name": "HDFC BANK",
+        "sector": "Banking",
+        "price": 2510.19,
+        "fluctuation": 0.047
+    },
+    {
+        "name": "ICICI BANK",
+        "sector": "Banking",
+        "price": 4470.53,
+        "fluctuation": 0.049
+    },
+    {
+        "name": "AXIS BANK",
+        "sector": "Banking",
+        "price": 2185.83,
+        "fluctuation": 0.015
+    },
+    {
+        "name": "SBI",
+        "sector": "Banking",
+        "price": 5591.96,
+        "fluctuation": 0.012
+    },
+    {
+        "name": "KOTAK MAHINDRA BANK",
+        "sector": "Banking",
+        "price": 3929.0,
+        "fluctuation": 0.032
+    },
+    {
+        "name": "RELIANCE IND",
+        "sector": "Energy",
+        "price": 1585.26,
+        "fluctuation": 0.04
+    },
+    {
+        "name": "ADANI GREEN",
+        "sector": "Energy",
+        "price": 6936.28,
+        "fluctuation": 0.018
+    },
+    {
+        "name": "NTPC",
+        "sector": "Energy",
+        "price": 4294.13,
+        "fluctuation": 0.047
+    },
+    {
+        "name": "POWER GRID",
+        "sector": "Energy",
+        "price": 345.58,
+        "fluctuation": 0.037
+    },
+    {
+        "name": "TATA POWER",
+        "sector": "Energy",
+        "price": 6119.74,
+        "fluctuation": 0.03
+    },
+    {
+        "name": "ONGC",
+        "sector": "Oil & Gas",
+        "price": 4896.44,
+        "fluctuation": 0.035
+    },
+    {
+        "name": "GAIL",
+        "sector": "Oil & Gas",
+        "price": 3642.39,
+        "fluctuation": 0.043
+    },
+    {
+        "name": "BPCL",
+        "sector": "Oil & Gas",
+        "price": 676.83,
+        "fluctuation": 0.043
+    },
+    {
+        "name": "HPCL",
+        "sector": "Oil & Gas",
+        "price": 4135.49,
+        "fluctuation": 0.04
+    },
+    {
+        "name": "INDIAN OIL",
+        "sector": "Oil & Gas",
+        "price": 7238.24,
+        "fluctuation": 0.017
+    },
+    {
+        "name": "L&T",
+        "sector": "Infrastructure",
+        "price": 4944.5,
+        "fluctuation": 0.049
+    },
+    {
+        "name": "IRCON",
+        "sector": "Infrastructure",
+        "price": 4628.59,
+        "fluctuation": 0.026
+    },
+    {
+        "name": "NCC",
+        "sector": "Infrastructure",
+        "price": 5174.96,
+        "fluctuation": 0.017
+    },
+    {
+        "name": "GMR INFRA",
+        "sector": "Infrastructure",
+        "price": 3516.78,
+        "fluctuation": 0.026
+    },
+    {
+        "name": "DLF",
+        "sector": "Infrastructure",
+        "price": 6587.1,
+        "fluctuation": 0.021
+    },
+    {
+        "name": "BAJAJ FINSERV",
+        "sector": "Finance",
+        "price": 4655.87,
+        "fluctuation": 0.014
+    },
+    {
+        "name": "BAJAJ FINANCE",
+        "sector": "Finance",
+        "price": 7939.92,
+        "fluctuation": 0.027
+    },
+    {
+        "name": "HDFC",
+        "sector": "Finance",
+        "price": 7177.18,
+        "fluctuation": 0.043
+    },
+    {
+        "name": "LIC",
+        "sector": "Finance",
+        "price": 1058.86,
+        "fluctuation": 0.031
+    },
+    {
+        "name": "MUTHOOT FINANCE",
+        "sector": "Finance",
+        "price": 5838.79,
+        "fluctuation": 0.022
+    },
+    {
+        "name": "ITC",
+        "sector": "Consumer Goods",
+        "price": 2204.48,
+        "fluctuation": 0.023
+    },
+    {
+        "name": "HINDUNILVR",
+        "sector": "Consumer Goods",
+        "price": 5366.42,
+        "fluctuation": 0.014
+    },
+    {
+        "name": "DABUR",
+        "sector": "Consumer Goods",
+        "price": 1231.3,
+        "fluctuation": 0.037
+    },
+    {
+        "name": "NESTLE INDIA",
+        "sector": "Consumer Goods",
+        "price": 5901.17,
+        "fluctuation": 0.017
+    },
+    {
+        "name": "BRITANNIA",
+        "sector": "Consumer Goods",
+        "price": 1094.47,
+        "fluctuation": 0.018
+    },
+    {
+        "name": "ASIAN PAINTS",
+        "sector": "Chemicals",
+        "price": 4008.15,
+        "fluctuation": 0.035
+    },
+    {
+        "name": "PIDILITE",
+        "sector": "Chemicals",
+        "price": 7500.33,
+        "fluctuation": 0.021
+    },
+    {
+        "name": "BERGER PAINTS",
+        "sector": "Chemicals",
+        "price": 5971.45,
+        "fluctuation": 0.012
+    },
+    {
+        "name": "TATA CHEMICALS",
+        "sector": "Chemicals",
+        "price": 6732.26,
+        "fluctuation": 0.036
+    },
+    {
+        "name": "ALKYL AMINES",
+        "sector": "Chemicals",
+        "price": 3815.73,
+        "fluctuation": 0.03
+    },
+    {
+        "name": "ULTRATECH CEMENT",
+        "sector": "Cement",
+        "price": 1927.34,
+        "fluctuation": 0.035
+    },
+    {
+        "name": "AMBUJA CEMENT",
+        "sector": "Cement",
+        "price": 5470.16,
+        "fluctuation": 0.036
+    },
+    {
+        "name": "ACC",
+        "sector": "Cement",
+        "price": 4519.57,
+        "fluctuation": 0.048
+    },
+    {
+        "name": "JK CEMENT",
+        "sector": "Cement",
+        "price": 1836.97,
+        "fluctuation": 0.048
+    },
+    {
+        "name": "RAMCO CEMENT",
+        "sector": "Cement",
+        "price": 2964.3,
+        "fluctuation": 0.026
+    },
+    {
+        "name": "BHARTI AIRTEL",
+        "sector": "Telecom",
+        "price": 342.48,
+        "fluctuation": 0.016
+    },
+    {
+        "name": "VODAFONE IDEA",
+        "sector": "Telecom",
+        "price": 4242.89,
+        "fluctuation": 0.037
+    },
+    {
+        "name": "RELIANCE JIO",
+        "sector": "Telecom",
+        "price": 7322.32,
+        "fluctuation": 0.01
+    },
+    {
+        "name": "MTNL",
+        "sector": "Telecom",
+        "price": 870.56,
+        "fluctuation": 0.029
+    },
+    {
+        "name": "BSNL",
+        "sector": "Telecom",
+        "price": 5465.51,
+        "fluctuation": 0.012
+    },
+    {
+        "name": "SUN PHARMA",
+        "sector": "Pharmaceuticals",
+        "price": 5296.63,
+        "fluctuation": 0.05
+    },
+    {
+        "name": "CIPLA",
+        "sector": "Pharmaceuticals",
+        "price": 5199.39,
+        "fluctuation": 0.012
+    },
+    {
+        "name": "DR REDDY",
+        "sector": "Pharmaceuticals",
+        "price": 3408.52,
+        "fluctuation": 0.01
+    },
+    {
+        "name": "LUPIN",
+        "sector": "Pharmaceuticals",
+        "price": 6559.39,
+        "fluctuation": 0.037
+    },
+    {
+        "name": "AUROBINDO PHARMA",
+        "sector": "Pharmaceuticals",
+        "price": 5467.97,
+        "fluctuation": 0.036
+    }
+]
