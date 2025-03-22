@@ -16,10 +16,12 @@ const MoneyLifeGame = () => {
   const [crypto, setCrypto] = useState(0);
   const [realEstate, setRealEstate] = useState(0);
   const [loan, setLoan] = useState(0);
+  const [loanInterestRate, setLoanInterestRate] = useState(0.05); // 5% interest rate
   const [passiveIncome, setPassiveIncome] = useState(0);
   const [savings, setSavings] = useState(0);
 
   const [stockPrice, setStockPrice] = useState(100); // Initial stock price
+  const [propertyValue, setPropertyValue] = useState(50000); // Initial property value
 
   // Job List (Some jobs require minimum age)
   const jobList = [
@@ -38,9 +40,14 @@ const MoneyLifeGame = () => {
     { message: "🏥 Medical Emergency! Lost $3000.", effect: () => setMoney(money - 3000) },
     { message: "🎉 You won a small lottery! Gained $5000.", effect: () => setMoney(money + 5000) },
     { message: "🎓 You went back to college. Expenses increased by $1000.", effect: () => setExpenses(expenses + 1000) },
+    { message: "🚗 Car repair needed! Lost $2000.", effect: () => setMoney(money - 2000) },
+    { message: "🏠 Home renovation! Lost $4000.", effect: () => setMoney(money - 4000) },
+    { message: "💼 Business investment failed! Lost $5000.", effect: () => setMoney(money - 5000) },
+    { message: "🛠️ Appliance repair needed! Lost $1000.", effect: () => setMoney(money - 1000) },
+    { message: "🚑 Health insurance premium increased! Expenses increased by $500.", effect: () => setExpenses(expenses + 500) },
   ];
 
-  // Auto-increase age every 5 seconds
+  // Auto-increase age every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setAge((prev) => prev + 1);
@@ -48,15 +55,48 @@ const MoneyLifeGame = () => {
       // Trigger life events at certain ages
       if (age === 25 && !married) lifeEvents[0].effect();
       if (age === 28 && children === 0) lifeEvents[1].effect();
-      if (age % 10 === 0) {
+      if (age % 5 === 0) {
         const randomEvent = lifeEvents[Math.floor(Math.random() * lifeEvents.length)];
         randomEvent.effect();
         setMessage(randomEvent.message);
       }
-    }, 5000); // Every 5 seconds = 1 year in-game
+
+      // Check for retirement condition
+      if (age === 60) {
+        if (money >= 1000000) {
+          setMessage("🎉 Congratulations! You have successfully retired with sufficient money to enjoy your retirement!");
+        } else {
+          setMessage("😢 You have reached retirement age but do not have enough money to enjoy your retirement.");
+        }
+        clearInterval(interval);
+      }
+    }, 2000); // Every 2 seconds = 1 year in-game
 
     return () => clearInterval(interval);
-  }, [age]);
+  }, [age, money]);
+
+  // Increase property value over time
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPropertyValue((prev) => prev * 1.02); // Increase property value by 2% every interval
+    }, 6000); // Every 6 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Deduct loan amount with interest periodically
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (loan > 0) {
+        const interest = loan * loanInterestRate;
+        setLoan(loan + interest);
+        setMoney(money - interest);
+        setMessage(`💸 Loan interest deducted: $${interest.toFixed(2)}`);
+      }
+    }, 6000); // Every 6 seconds
+
+    return () => clearInterval(interval);
+  }, [loan, loanInterestRate, money]);
 
   // Select Job
   const selectJob = (selectedJob) => {
@@ -81,6 +121,35 @@ const MoneyLifeGame = () => {
     }
   };
 
+  // Buy Property
+  const buyProperty = () => {
+    if (money >= propertyValue) {
+      setRealEstate(realEstate + 1);
+      setMoney(money - propertyValue);
+      setMessage("🏡 You bought a property!");
+    } else {
+      setMessage("❌ Not enough money to buy a property.");
+    }
+  };
+
+  // Sell Property
+  const sellProperty = () => {
+    if (realEstate > 0) {
+      setRealEstate(realEstate - 1);
+      setMoney(money + propertyValue);
+      setMessage("🏡 You sold a property!");
+    } else {
+      setMessage("❌ No properties to sell.");
+    }
+  };
+
+  // Take Loan
+  const takeLoan = (amount) => {
+    setLoan(loan + amount);
+    setMoney(money + amount);
+    setMessage(`💰 You took a loan of $${amount}`);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setMoney((prev) => prev + salary + passiveIncome + realEstate * 2000 - expenses);
@@ -101,6 +170,8 @@ const MoneyLifeGame = () => {
         <p>🏡 Properties Owned: {realEstate} (Rent: ${realEstate * 2000}/month)</p>
         <p>📈 Stock Price: ${stockPrice.toFixed(2)}</p>
         <p>🏦 Savings: ${savings.toFixed(2)} (Interest: 1%/month)</p>
+        <p>🏠 Property Value: ${propertyValue.toFixed(2)}</p>
+        <p>💳 Loan: ${loan.toFixed(2)} (Interest: {loanInterestRate * 100}%/month)</p>
         <p style={{ fontSize: "16px", fontWeight: "bold", color: "yellow", marginTop: "10px" }}>{message}</p>
       </div>
 
@@ -113,6 +184,22 @@ const MoneyLifeGame = () => {
 
       <button onClick={upgradeJob} style={{ padding: "10px", margin: "5px", backgroundColor: "#ff9800", color: "white", borderRadius: "5px", cursor: "pointer" }}>
         🚀 Upgrade Job
+      </button>
+
+      <h3>🏡 Manage Properties:</h3>
+      <button onClick={buyProperty} style={{ padding: "10px", margin: "5px", backgroundColor: "#4caf50", color: "white", borderRadius: "5px", cursor: "pointer" }}>
+        🏠 Buy Property (${propertyValue.toFixed(2)})
+      </button>
+      <button onClick={sellProperty} style={{ padding: "10px", margin: "5px", backgroundColor: "#f44336", color: "white", borderRadius: "5px", cursor: "pointer" }}>
+        🏠 Sell Property (${propertyValue.toFixed(2)})
+      </button>
+
+      <h3>💳 Manage Loans:</h3>
+      <button onClick={() => takeLoan(10000)} style={{ padding: "10px", margin: "5px", backgroundColor: "#9c27b0", color: "white", borderRadius: "5px", cursor: "pointer" }}>
+        💰 Take Loan ($10,000)
+      </button>
+      <button onClick={() => takeLoan(50000)} style={{ padding: "10px", margin: "5px", backgroundColor: "#9c27b0", color: "white", borderRadius: "5px", cursor: "pointer" }}>
+        💰 Take Loan ($50,000)
       </button>
     </div>
   );
