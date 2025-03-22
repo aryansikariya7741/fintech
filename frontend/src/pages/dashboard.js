@@ -119,6 +119,7 @@ const Dashboard = () => {
         <motion.div
           style={styles.card}
           whileHover={{ scale: 1.05, boxShadow: "5px 5px 20px rgba(0, 255, 153, 0.5)" }}
+          onClick={() => navigate("/expenses")} // Redirect to /expenses on click
         >
           <h2>Expense Tracker</h2>
           <p>Track and categorize your spending.</p>
@@ -138,6 +139,14 @@ const Dashboard = () => {
         >
           <h2>Financial Education</h2>
           <p>Boost your knowledge with curated courses.</p>
+        </motion.div>
+        <motion.div
+          style={styles.card}
+          whileHover={{ scale: 1.05, boxShadow: "5px 5px 20px rgba(0, 255, 153, 0.5)" }}
+          onClick={() => navigate("/money-life")}
+        >
+          <h2>Life Money Simulation Game</h2>
+          <p>Simulate life and financial decisions.</p>
         </motion.div>
       </div>
 
