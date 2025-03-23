@@ -1,4 +1,5 @@
 # EduFinance - Gamified Financial Literacy Platform
+![Image](https://github.com/user-attachments/assets/298877f9-46f9-48e1-b30b-31cfbafe4370)
 ## Overview
 
 Many young adults lack financial literacy, leading to poor financial decisions. Without proper financial knowledge, they struggle with budgeting, saving, and investing, which impacts their long-term financial stability.
@@ -21,6 +22,19 @@ EduFinance is an engaging, gamified platform designed to teach essential financi
 
 7.Community & Leaderboards: Compete with peers, share financial tips, and earn achievements.
 
+![Image](https://github.com/user-attachments/assets/33aa0c49-cfae-4959-bce8-83a18e681701)
+![Image](https://github.com/user-attachments/assets/6cfde77a-d49d-4688-988b-5487c4f0041d)
+
+![Image](https://github.com/user-attachments/assets/e82dfd67-d2cf-4b57-86a4-010ce8c77b7b)
+![Image](https://github.com/user-attachments/assets/6c0ec8dc-30b5-4b48-ba90-b6af929cdb05)
+![Image](https://github.com/user-attachments/assets/5468723f-9b17-471e-a16c-6e2952ce3d90)
+![Image](https://github.com/user-attachments/assets/7c5be318-4807-48d7-ad9f-c8941332ec9d)
+![Image](https://github.com/user-attachments/assets/64f38704-326b-4207-aadf-91456f347aea)
+![Image](https://github.com/user-attachments/assets/6aa13403-ebbd-43e4-881b-2be8cec9b82e)
+
+![Image](https://github.com/user-attachments/assets/4e0250cd-293a-4aea-ab83-e02c493608d6)
+![Image](https://github.com/user-attachments/assets/771143c2-dbcb-46d7-8b54-f6e21bce6f4f)
+![Image](https://github.com/user-attachments/assets/eeba0ed5-4b79-4d9f-ae1a-13db7fba7527)
 ## Technology Stack
 
 #### Frontend:
